@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>APPLICATION FORM</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             
+               <div class="navbar-nav">
+                 <table>
+                     <td><a class="nav-item nav-link " href="menucard.html">Home</a></td>
+                     <td>  <a class="nav-item nav-link " href="table.html">table</a></td>
+                     <td><a class="nav-item nav-link " href="forms.html">FORMS</a></td>
+                     
+                 </table>   
+                             
+             
+               </div>        
+           </nav>
+
+    </head>
+    <body>
+        <link rel="stylesheet" href="style_forms.css">
+        <div id="app">
+            <h1><u>APPLICATION FORM</u></h1>
+            
+            <form action="form_submit.php" method="post">
+                <div id="container"> 
+                    <ol>
+                    <p>Fill the form with Original details</p>
+                    <hr size="px" color="white">
+                    <li><p>NAME:</p> </li>                  
+                    <label> First Name: </label> <br>
+                    <input type="text" name="firstname" placeholder= "Firstname" size="20" required /> 
+                    <br>
+                    <label>Middle Name:</label><br>
+                    <input type="text " name="Midname" placeholder="Mindname"   size="20">
+                    <br>
+                    <label> Lastname: </label>  <br>
+                    <input type="text" name="lastname" placeholder="Lastname" size="20" />
+                    <br>
+                    <hr size="px" color="white">
+                    <li><label>Age:</label></li><br>
+                    <input type="number"  placeholder="20-30" min="20" max="30" size="10">
+                    <br><br>
+                    <li><label for="date">Date Of Birth:</label></li><br>
+                    <input type="date" placeholder="y-m-d" min="1998-01-01" max="1999-12-31">
+                    <br><br>
+                    <li><label>Gender:</label></li><br>
+                    <input type="radio" name="gen" value="male">Male<br>
+                    <input type="radio" name="gen" value="female">Female<br>
+                    <input type="radio" name="gen" value="transgender">Transgender<br><br>
+                    <li><label for="qualification">Select your Qualification</label></li><br>
+                    <select name="qualification">
+                        <option value="Qualificationt" selected>Qualification?</option>
+                        <option value="B.E">B.E</option>
+                        <option value="B.Tech" >B.Tech</option>
+                        <option value="B.Sc">B.Sc</option>
+                        <option value="B.A">B.A</option>
+                        <option value="B.Com">B.Com</option>
+                        
+                    </select>   <br><br>
+                    <li><label>CGPA:</label></li> <br>
+                    <input type="number" placeholder="cgpa"><br><br>
+                    <li><label>Job Application:</label></li><br>
+                    <select name="job">
+                        <option value="job" selected>Job Application for?</option>
+                        <option value="Programmer">Programmer</option>
+                        <option value="Analyst" >Analyst</option>
+                        <option value="Office support">Office support</option>
+                        
+                    </select>   <br><br>
+                    <li><label>Experience</label></li><br>
+                    <input type="number" min="0" max="5" placeholder="[0-5 years]" size="30"><br><br>
+                    <li><label>Computer skills:</label></li><br>
+                    <input type="checkbox"  value="C" /> C<br />
+                    <input type="checkbox" value="C++" /> C++<br />
+                    <input type="checkbox" value="Java" />Java <br />
+                    <input type="checkbox"  value="Python" /> Python <br>     
+                    <input type="checkbox"  value="Testing" /> Testing <br>   
+                    <input type="checkbox"  value="MS Office" /> MS Office <br> 
+                    <input type="checkbox"  value="DTP" />DTP<br> <br>
+                    <li><label>Other Skills</label></li>  <br>
+                    <textarea id="left" cols="30" rows="2"  > "other skills"</textarea> <br><br>
+                    <hr size="px" color="white">
+                    
+                    <button type="submit" href="/">Submit</button><button type="reset" value="Reset">Reset</button>
+                                       
+
+                    
+                </div>
+                
+                
+            </form>
+
+        </div>
+        <div >             
+            <footer id="foot">
+                <div>
+        
+                    <P><B>CONTACT US: </B></P>
+                    <b>Mobile:+919123456789</b>
+            
+                </div>
+
+            </footer>            
+
+        </div>
+        
+
+    </body>
+
+    <style>
+        #app{  ]
+    
+    
+            font-family: 'Courier New', Courier, monospace;      
+            width: max-width;
+            height:auto;
+            margin-left:250px;
+            margin-top:10px;
+            margin-right:250px;
+            background:linear-gradient(240deg,rgba(73, 75, 175, 0.685),rgb(235, 103, 180));
+            display: flex;
+            flex-flow: column;
+            align-items:center;
+            justify-content:center;
+        
+        }
+        #container {
+            color: blanchedalmond;
+            border: 3px solid white;
+            background-color:rgb(43, 40, 40);
+            padding: 60px;
+            margin-bottom: 50px;
+           
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            width: 50%;
+        }
+        button:hover, .btn-item:hover {
+        
+            background: #0ca0ad;
+        }
+        #foot{
+            border:5px solid gold;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20%;
+            color: blanchedalmond;
+          
+            background:linear-gradient(240deg,rgba(60, 60, 61, 0.753),rgb(24, 28, 31));
+        
+        }
+        
+    </style>
+    
+
+
+</html>

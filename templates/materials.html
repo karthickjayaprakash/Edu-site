@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div id="navbar-nav">
+                <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="materials/">materials</a>
+                <a class="nav-item nav-link" href="#">dates</a>
+                <a class="nav-item nav-link disabled" href="#">exam</a>
+                <a class="nav-item nav-link disabled" href="#">details</a>
+              </div>
+            </div>
+          </nav>
+
+    </head>
+    <body>
+      <div id="body">
+        <h1>BOOKS</h1>
+        
+        
+        
+        <table class="table">
+          
+          <tr>
+            <th>Name</th>
+          <th>Page</th>
+          <th>Age of author</th>
+          </tr>
+          <tr>
+            {% for i in obj %}
+            <td><p>{{i.name}}</p></td>
+            <td><p>{{i.page}}</p></td>
+            <td><p>{{i.age}}</p></td>  
+                    
+          </tr>
+          {% endfor %}  
+          
+
+        </table>
+                 
+       
+
+      </div>
+        
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+  #navbar-nav{
+    display: flex;
+    flex-flow: row;
+    border: 10px solid rgb(99, 96, 96);
+    background-color:rgb(69, 221, 69);
+    font-size: 25px;
+  }
+  #body{    
+    border:20px solid rgb(153, 148, 148);   
+    background:linear-gradient(240deg,rgba(160, 14, 124, 0.753),rgb(3, 37, 46));
+    display: flex;
+    align-items:left;
+    justify-content:left;
+    color: blanchedalmond;
+
+  }
+
+  #img{
+    width:200px;
+    height:200px;
+    
+    border-radius: 50%;
+    border-top: 10px solid #30ade7;
+    border-bottom: 10px solid #22c5e2;
+    border-left: 10px solid #080808;
+    border-right: 10px solid #000000;
+     
+  }
+  .table{
+    column-gap: 5px;
+    margin-top: 30PX;
+    border: 10px solid black;
+  }
+
+</style>
+
+</html>

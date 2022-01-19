@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+      <link rel="stylesheet" href="home.css/">
+      <meta charset="UTF-8">
+    
+      <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+      
+      <!-- Boxicons CDN Link -->
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>     
+      <meta name ="viewport" content ="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">        
+          
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active"  href="/"><i class="fas fa-home"></i>Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link active" href="materials/"><i class="fas fa-book"></i>Materials</a>
+                  <a class="nav-item nav-link active" href="#"><i class='bx bxs-calendar'></i>Dates</a>
+                  <a class="nav-item nav-link active" href="#"><i class="fas fa-graduation-cap"></i>Exam</a>
+                  <a class="nav-item nav-link active " href="menucard/"><i class="fas fa-minus-square"></i>Menucard</a>
+                  
+                  
+                  
+                  <a class="nav-item nav-link active " href="quiz/">quiz</a>
+                  <div id="right">
+                    <a class="nav-item nav-link active " href="forms/">login</a>                  
+
+                  </div>
+                  
+                </div>
+              </div>
+
+         
+           
+          </nav>
+          <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    </head>
+   <!-- <div class="bar">
+      <h3>left bar</h3>
+      <ul>
+        <li><a href="/"><i class="fas fa-home">home</i></a></li>
+        <li><a href="#"><i class="fas fa-book"></i>book</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>-->
+    <hr size="5px" color="white"> <hr size="5px" color="white">
+    <body>
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">SEEDLING</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">HOME</span>
+            </a>
+             <span class="tooltip">HOME</span>
+          </li>
+          <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">User</span>
+           </a>
+           <span class="tooltip">User</span>
+         </li>
+         <li>
+           <a href="materials/">
+            <i class='bx bxs-book'></i>
+             <span class="links_name">BOOKS</span>
+           </a>
+           <span class="tooltip">BOOKS</span>
+         </li>
+         <li>
+           <a href="course/">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">course</span>
+           </a>
+           <span class="tooltip">course</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Files</span>
+           </a>
+           <span class="tooltip">Files</span>
+         </li>
+         <li>
+           <a href="quiz/">
+            <i class='bx bxs-hourglass-bottom'></i>
+             <span class="links_name">QUIZ</span>
+           </a>
+           <span class="tooltip">QUIZ</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bxs-calendar'></i>
+             <span class="links_name">DATES</span>
+           </a>
+           <span class="tooltip">DATES</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-cog' ></i>
+             <span class="links_name">Setting</span>
+           </a>
+           <span class="tooltip">Setting</span>
+         </li>
+         <li class="profile">
+             <div class="profile-details">
+               <img src="profile.jpg" alt="profileImg">
+               <div class="name_job">
+                 <div class="name">USERNAME</div>
+                 <div class="job">RESIGNATION</div>
+               </div>
+             </div>
+             <i class='bx bx-log-out' id="log_out" ></i>
+         </li>
+        </ul>
+      </div>
+
+      
+      <div id="txt">
+        <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research. Education frequently takes place under the guidance of educators, however learners can also educate themselves. Education can take place in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational. The methodology of teaching is called pedagogy. Formal education is commonly divided formally into such stages as preschool or kindergarten, primary school, secondary school and then college, university, or apprenticeship. There are movements for education reforms, such as for improving quality and efficiency of education towards applicable relevance in the students' lives and efficient problem solving in modern or future society at large or for evidence-based education methodologies. A right to education has been recognized by some governments and the United Nations.[a] Global initiatives aim at achieving the Sustainable Development Goal 4, which promotes quality education for all. In most regions, education is compulsory up to a certain age.</p>
+      </div>
+    </body>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="about/">about us</a></li>
+                     <li> <a href="index/"> About me </a></li>
+                      <li><a href="https://karthickjayaprakash.github.io/frontend-da1/home_page.html">our mobile company</a></li>
+                                       
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>MINE</h4>
+                  <ul>
+                      <li><a href="menucard/">MENUCARD</a></li>
+                      <li><a href="table/">table</a></li>
+                      <li><a href="form/">form</a></li>
+                      <li><a href="#">date</a></li>
+                     
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>rating</h4>
+                  <ul>
+                      <li><a href="product/">product ratings</a></li>
+                   
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a></a>
+                      <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                      <a href="https://www.instagram.com/accounts/login/"><i class='bx bxl-instagram-alt' ></i></a>                   
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      
+  </footer>
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+    </script>
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+  #col{
+    background: black;
+    display: table-column;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center;
+
+  }
+ 
+  .vertcal{
+    width: 300px;
+  }
+  .vertical a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .navbar-nav{
+
+    background-color:rgb(69, 221, 69);
+    font-size: 25px;      
+   
+  }
+  #body{      
+    background:linear-gradient(240deg,rgba(160, 14, 124, 0.753),rgb(3, 37, 46));
+   
+  }
+
+  #img{
+    width:70%;    
+    height:700px;   
+    border-radius: 5;
+    border-top: 10px solid #bdc5c9;
+    border-bottom: 10px solid #d9e2e4;
+    border-left: 10px solid #080808;
+    border-right: 10px solid #000000;
+     
+  }
+.text{
+    color: white;
+    size: 20px;
+}
+.div1{
+  font-family: 'Open Sans Condensed', sans-serif;
+color: cornsilk;
+}
+.img1{    
+width:50%;
+height:400px;
+float: right;
+}
+#footer{ 
+  padding: 50px; 
+background-color:rgb(14, 3, 80);
+color: blanchedalmond;
+
+
+}
+
+</style>-->
+<style>
+  /* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.navbar-nav{
+  background-color:rgb(69, 221, 69);
+  font-size: 25px;
+  padding:0px 0px 0px 250px ;    
+ 
+}
+#txt{
+  padding-left: 250px ;
+  padding-right: 250px;
+  position: relative;
+  border: 2px solid aqua;
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101D;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #1d1b31;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+.sidebar .bx-search{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #1d1b31;
+  color: #FFF;
+}
+.sidebar.open .bx-search:hover{
+  background: #1d1b31;
+  color: #FFF;
+}
+.sidebar .bx-search:hover{
+  background: #FFF;
+  color: #11101d;
+}
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #11101D;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.sidebar li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.open li.profile{
+  width: 250px;
+}
+.sidebar li .profile-details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidebar li.profile .job{
+  font-size: 12px;
+}
+.sidebar .profile #log_out{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #1d1b31;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidebar.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+.home-section{
+  position: relative;
+  background: #E4E9F7;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 0px 0px 0px 250px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.div1{
+	padding: 250px;
+}
+
+
+
+
+
+</style>
+
+
+
+</html>

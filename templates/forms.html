@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+    <head>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+
+    </head>
+    <div class="cont">
+        <div class="box">
+         
+            <body id="app">
+             <h1><u>APPLICATION FORM</u></h1>
+                         
+             <form  method="POST">
+                 {% csrf_token %}       
+                 {{form|crispy}}        
+                 <button type="submit" href="/">Submit</button>
+     
+         </div> 
+       
+
+    </div>
+    
+   </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+   
+   
+  #app{  
+    
+    
+    font-family: 'Courier New', Courier, monospace;      
+    width: max-width;
+    height:auto;
+    margin-left:250px;
+    margin-top:10px;
+    margin-right:250px;
+    background:linear-gradient(240deg,rgba(73, 75, 175, 0.685),rgb(235, 103, 180));
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content:center;
+
+}
+#container {
+    color: blanchedalmond;
+    border: 3px solid white;
+    background-color:rgb(43, 40, 40);
+    padding: 60px;
+    margin-bottom: 50px;
+   
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    width: 50%;
+}
+button:hover, .btn-item:hover {
+
+    background: #0ca0ad;
+}
+#foot{
+    border:5px solid gold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    color: blanchedalmond;
+  
+    background:linear-gradient(240deg,rgba(60, 60, 61, 0.753),rgb(24, 28, 31));
+
+}
+</style>
+
+
+</html>

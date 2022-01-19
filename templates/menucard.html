@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="basic/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/materials">materials</a>
+                <a class="nav-item nav-link active" href="">dates</a>
+                <a class="nav-item nav-link active" href="#">exam</a>
+                <a class="nav-item nav-link " href="menucard/">menucard</a>
+                <a class="nav-item nav-link " href="index/">details about me</a>
+              </div>
+            </div>
+          </nav>
+
+    </head>
+    <body id="body">
+        <body background="black" class="main">
+            <link rel="stylesheet" href="style_restaurnt.css">
+            <div id="divs">
+                <h1><u>Arjun's cafe</u></h1>
+                <img  src="{% static 'images/h.jpg' %}" alt="hotel" class="img">
+                <br><hr size="2px">
+                <p style="background-color: white;"><b>MENU CARD</b></p>
+                <br>
+                <div id="divm">
+                    <dl>
+                        <ul>
+                            <li><b>BREAKFAST:</b></li>
+                            <ol>
+                                <li><dt id="txt">Idli:                    <b> (Price:30rs)</b></dt></li>
+                                <dd>3-Idli with sambar,chutney ,1- vada </dd>
+                                <br>
+                                <li><dt id="txt">Poori:                   <b> (Price:35rs) </b>    </dt></li>
+                                <dd>2-Poori with paneer</dd>
+                                <br>
+                                <li><dt id="txt">Pongal:                  <b>(Price:35rs) </b>  </dt></li>
+                                <dd>1-cup of pongal with sambar, 2-vada</dd>
+                            </ol> 
+                            <br>
+                            <hr size="2px" color="white">     
+                            <li><b>LUNCH:</b></li>   
+                            <ol>
+                                <li><dt id="txt">MEALS:                   <b> (Price: 50rs)</b> </dt></li>
+                                <dd>1-cup of rice with sambar, Rasam ,Butter milk,pickel </dd>
+                                <br>
+                                <li><dt id="txt">Biriyani:                 <b> (Price: 160rs)</b> </dt></li>
+                                <dd>1- plate Biriyani, Ritha  </dd>
+                                <br>
+                                <li><dt id="txt">Parotta:                  <b> (Price: 100rs)</b> </dt></li>
+                                <dd>4- parotta, salna, chiken gravy </dd>
+        
+                            </ol>  
+                            <br> 
+                            <hr size="2px" color="white">  
+                            <li><b>DINNER:</b></li>   
+                            <ol>
+                                <li><dt id="txt">DOSA:                    <b> (Price: 100rs)</b> </dt></li>
+                                <dd>3- Dosa, sambar,chutney,mutton Gravy</dd>
+                                <br>
+                                <li><dt id="txt">Chapathi:                <b> (Price: 60rs)</b>  </dt></li>
+                                <dd>3- chappathi, panner,channa </dd>
+                                <br>
+                                <li><dt id="txt">Fried rice:              <b> (Price: 80rs)</b>  </dt></li>
+                                <dd>1 -plate chicken fried rice</dd>
+        
+                            </ol>  
+                                                 
+            
+                            
+            
+            
+                        
+                        
+                        </ul>
+                    </dl>
+        
+                </div>
+                <P style="background-color: WHITE;"><B>To Know About US </B></P>       
+        
+        
+            </div>
+            
+            
+          
+        
+           
+        
+        
+        </body>
+        <footer id="foot">
+            <div>
+                
+                <P style="background-color: WHITE;"><B>CONTACT US: </B></P>
+                <b>Mobile:+919123456789</b>
+        
+            </div>
+            
+            
+        
+        </footer>
+        
+        
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+    .navbar-nav{
+        border: 10px solid rgb(58, 56, 56);       
+        background-color:rgb(69, 221, 69);
+        font-size: 25px;
+    }
+    #main{
+        background-color: black;
+            
+    }
+    img{
+        border-top: 10px solid white;
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+        border-bottom: 10px solid white;
+        border-radius: 50%;
+        width:200px;
+        height:200px;
+    
+    }
+    #divs{  
+        border: 20px solid black;
+        
+        width: max-width;
+        height:auto;
+        margin-left:250px;
+        margin-top:10px;
+        margin-right:250px;
+        background:linear-gradient(240deg,rgba(248, 71, 204, 0.753),rgb(212, 77, 77));
+        display: flex;
+        flex-flow: column;
+        align-items:center;
+        justify-content:center;
+    
+    }
+    #divm{
+        font-size: 20px;
+        
+        border-top: 10px solid white;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
+        border-bottom: 10px solid white;
+    }
+    #txt{
+        font-style: initial ;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #foot{
+        border:5px solid gold;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20%;
+      
+        background:linear-gradient(240deg,rgba(26, 29, 226, 0.753),rgb(49, 157, 230));
+    
+    }
+</style>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
