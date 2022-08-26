@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'karthick-Edu'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_21825C3D744449B1B7B91A75351B54B5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_837EFDB745D54F349428806CF15E82C3 }}
